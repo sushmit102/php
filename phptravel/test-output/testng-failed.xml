@@ -1,13 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="tra.Base">
+      <class name="phpp.ValidateSignUpPage">
         <methods>
-          <include name="Myaccount"/>
+          <include name="validatesignup"/>
+          <include name="log"/>
+          <include name="preconditn"/>
         </methods>
-      </class> <!-- tra.Base -->
+      </class> <!-- phpp.ValidateSignUpPage -->
+      <class name="phpp.ValidationMyprofile">
+        <methods>
+          <include name="validatemyprofile"/>
+          <include name="log"/>
+          <include name="preconditn"/>
+        </methods>
+      </class> <!-- phpp.ValidationMyprofile -->
+      <class name="phpp.ValidationHotel">
+        <methods>
+          <include name="precondition"/>
+          <include name="log"/>
+          <include name="validatehotel"/>
+        </methods>
+      </class> <!-- phpp.ValidationHotel -->
+      <class name="phpp.Validationlogin">
+        <methods>
+          <include name="log"/>
+          <include name="preconditn"/>
+          <include name="validatelogin"/>
+        </methods>
+      </class> <!-- phpp.Validationlogin -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
