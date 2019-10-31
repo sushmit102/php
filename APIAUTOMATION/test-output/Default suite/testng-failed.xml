@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Displayusername">
+      <class name="Api.TrendingHashtag">
         <methods>
-          <include name="displayusername"/>
+          <include name="hashtags"/>
         </methods>
-      </class> <!-- Displayusername -->
+      </class> <!-- Api.TrendingHashtag -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
